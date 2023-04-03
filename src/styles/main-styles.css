@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("../imgs/bgimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.227);
+}
+
+.nav-item,
+.website-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 150px;
+  z-index: 10;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.nav-item .active-page {
+  border-bottom: 1px solid white;
+  padding: 3px;
+}
+
+.left-nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  flex: 0 1 auto;
+  z-index: 10;
+}
+
+.right-nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+  flex: 0 1 auto;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+/* Location Page */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  flex: 0 1 auto;
+  min-width: 1100px;
+  height: 800px;
+}
+
+.main-content h2 {
+  font-size: 50px;
+}
+
+.image-container {
+  background-color: black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.odin-logo {
+  width: 400px;
+}
+
+.website-name-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 400px;
+}
+
+.website-name {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: left;
+}
+
+.main-content h2 {
+  color: black;
+  font-size: 90px;
+}
+
+.introduction-text {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Menu */
+
+.image-container-map {
+  width: 80%;
+}
+
+.odin-map {
+  width: 100%;
+}
+
+/* Animations */
+
+.main-content {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
